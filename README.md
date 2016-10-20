@@ -20,8 +20,9 @@ Run commands in background container
 
 Run asciinema2gif 
 
-    sudo docker exec -it asciinema-some asciinema2gif --size small --speed 2 --theme solarized-dark -o "~/another.gif" https://asciinema.org/api/asciicasts/<nº>
+     sudo docker exec -it asciinema-some asciinema2gif --size small --speed 2 --theme solarized-dark -o "/home/asciinema/another.gif" https://asciinema.org/api/asciicasts/<nº>
+
 
 Copiar .gif for your host
 
-    sudo docker cp asciinema-some:~/another.gif ~/another.gif
+    sudo docker cp asciinema-some:/home/asciinema/another.gif ~/another.gif

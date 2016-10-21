@@ -18,7 +18,7 @@ Run commands in background container
 
     sudo docker exec -it asciinema-some asciinema rec
 
-Run asciinema2gif 
+Run asciinema2gif with nº (Ex. https://asciinema.org/api/asciicasts/8332)
 
      sudo docker exec -it asciinema-some asciinema2gif --size small --speed 2 --theme solarized-dark -o "/home/asciinema/another.gif" https://asciinema.org/api/asciicasts/<nº>
 

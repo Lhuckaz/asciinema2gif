@@ -6,11 +6,11 @@ RUN apt-get install gcc g++ make python-setuptools ruby curl git imagemagick gif
 
 RUN mkdir /home/asciinema
 
-RUN chmod -R 777 /home
+RUN chmod -R 777 /home/asciinema
 
 RUN groupadd -r asciinema && useradd -r -g asciinema asciinema
 
-RUN chown -R asciinema:asciinema /home
+RUN chown -R asciinema:asciinema /home/asciinema
 
 RUN curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 
